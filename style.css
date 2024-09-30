@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("./img/8k-ultra-hd-nature-dock-o1sgdrpuarjf9j0j.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 4vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.head {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#sec, #min, #hr {
+    width: 30%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6vw;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+#date {
+    font-family: 'Arial', sans-serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    #sec, #min, #hr {
+        width: 80%;
+        height: 15vh;
+        font-size: 12vw;
+    }
+
+    #date {
+        font-size: 5vw;
+    }
+}
